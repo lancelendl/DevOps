@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "DF-DevLocal"
 		},
+		"demoserveraw_connectionString": {
+			"value": ""
+		},
 		"AzureKeyVault1_properties_typeProperties_baseUrl": {
 			"value": "https://AKVtestDevOps.vault.azure.net/"
 		},

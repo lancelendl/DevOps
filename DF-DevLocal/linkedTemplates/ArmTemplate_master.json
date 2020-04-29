@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "DF-DevLocal"
 		},
+		"demoserveraw_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'demoserveraw'"
+		},
 		"AzureKeyVault1_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://AKVtestDevOps.vault.azure.net/"
@@ -45,6 +49,9 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"demoserveraw_connectionString": {
+						"value": "[parameters('demoserveraw_connectionString')]"
 					},
 					"AzureKeyVault1_properties_typeProperties_baseUrl": {
 						"value": "[parameters('AzureKeyVault1_properties_typeProperties_baseUrl')]"

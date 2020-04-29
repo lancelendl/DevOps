@@ -8,7 +8,7 @@
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://beyondimpactllc.com",
+					"url": "https://devwebhook.com",
 					"method": "POST",
 					"body": {
 						"message": "Process"

@@ -7,10 +7,15 @@
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
-				"frequency": "Minute",
+				"frequency": "Week",
 				"interval": 1,
 				"startTime": "2020-04-29T21:20:00.000Z",
-				"timeZone": "UTC"
+				"timeZone": "UTC",
+				"schedule": {
+					"weekDays": [
+						"Sunday"
+					]
+				}
 			}
 		}
 	}

@@ -245,6 +245,67 @@
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/pipelines/Wait2')]"
 			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/trigger2')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Started",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "Wait2",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
+				"type": "ScheduleTrigger",
+				"typeProperties": {
+					"recurrence": {
+						"frequency": "Week",
+						"interval": 1,
+						"startTime": "2020-04-29T21:20:00.000Z",
+						"timeZone": "UTC",
+						"schedule": {
+							"weekDays": [
+								"Sunday"
+							]
+						}
+					}
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/Wait2')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/webhook')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "WebHook1",
+						"type": "WebHook",
+						"dependsOn": [],
+						"userProperties": [],
+						"typeProperties": {
+							"url": "https://beyondimpactllc.com",
+							"method": "POST",
+							"headers": {},
+							"body": {
+								"message": "Process"
+							},
+							"timeout": "00:10:00"
+						}
+					}
+				],
+				"annotations": []
+			},
+			"dependsOn": []
 		}
 	]
 }

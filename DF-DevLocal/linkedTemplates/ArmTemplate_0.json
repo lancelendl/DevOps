@@ -114,32 +114,6 @@
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/webhook')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"activities": [
-					{
-						"name": "WebHook1",
-						"type": "WebHook",
-						"dependsOn": [],
-						"userProperties": [],
-						"typeProperties": {
-							"url": "https://beyondimpactllc.com",
-							"method": "POST",
-							"headers": {},
-							"body": {
-								"message": "Process"
-							},
-							"timeout": "00:10:00"
-						}
-					}
-				],
-				"annotations": []
-			},
-			"dependsOn": []
-		},
-		{
 			"name": "[concat(parameters('factoryName'), '/AzureSqlDatabase1')]",
 			"type": "Microsoft.DataFactory/factories/linkedServices",
 			"apiVersion": "2018-06-01",

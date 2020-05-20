@@ -1,0 +1,6 @@
+C:\Users\Lance.Lendl\OneDrive - Beyond Impact 2.0 LLC\Azure\adventureworks\bin\Model.asdatabase
+C:\Users\Lance.Lendl\OneDrive - Beyond Impact 2.0 LLC\Azure\adventureworks\bin\Model.deploymenttargets
+C:\Users\Lance.Lendl\OneDrive - Beyond Impact 2.0 LLC\Azure\adventureworks\bin\Model.deploymentoptions
+C:\Users\Lance.Lendl\OneDrive - Beyond Impact 2.0 LLC\Azure\adventureworks\obj\Development\Model.asdatabase
+C:\Users\Lance.Lendl\OneDrive - Beyond Impact 2.0 LLC\Azure\adventureworks\obj\Development\Model.deploymentoptions
+C:\Users\Lance.Lendl\OneDrive - Beyond Impact 2.0 LLC\Azure\adventureworks\obj\Development\Model.deploymenttargets
